@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "speak": "<s>Following are the options I can help you with, say, Zones, Medications, Today , Peekflow, Reminders. At any time say 'zones' to repeat</s>",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "choose one of the options below",
+      "isSubtle": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Products",
+      "data": {
+        "selectedMenuItem": "products"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Categories",
+      "data": {
+        "selectedMenuItem": "categories"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Orders",
+      "data": {
+        "selectedMenuItem": "orders"
+      }
+    }
+  ]
+}
